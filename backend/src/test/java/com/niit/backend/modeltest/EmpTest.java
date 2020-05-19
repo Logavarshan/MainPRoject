@@ -29,7 +29,7 @@ static EmpService EmplService;
 		System.out.println("succefully bean initiated");
 	}
 	
-	@Ignore
+	//@Ignore
 	@Test
 	public void addEmptest() {
 		
@@ -57,7 +57,7 @@ static EmpService EmplService;
 		}
 	}
 	
-	//@Ignore
+	@Ignore
 	@Test
 	public void updateEmployee() {
 		
@@ -72,7 +72,7 @@ static EmpService EmplService;
 	public void deleteEmployee()
 	{
 		
-		int emplId=1;
+		int emplId=9;
 		System.out.println("In delete method");
 		assertTrue("problem in deleting faculty:",EmplService.deleteEmployee(emplId));
 		System.out.println("After delete");
